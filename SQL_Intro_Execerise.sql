@@ -14,7 +14,7 @@ ORDER BY Price ASC;
 SELECT Name, Price FROM products
 ORDER BY Price DESC;
 -- find all employees who don't have a middle initial
-SELECT FirsttName, MiddleInitial, LastName FROM employees
+SELECT FirstName, MiddleInitial, LastName FROM employees
 WHERE MiddleInitial IS NULL;
 -- find distinct product prices
 SELECT DISTINCT Price FROM products
@@ -35,6 +35,6 @@ SELECT FirstName, LastName, Title, MiddleInitial FROM employees
 WHERE Title LIKE "%Geek%" 
 AND MiddleInitial IS NULL;
 -- find all products from the products table whose stock level is in the range -- of 500 to 1200. Order by Price from least to greatest. Hint: Use the between keyword
-SELECT * FROM prdoucts
+SELECT * FROM products
 WHERE StockLevel BETWEEN 500 AND 1200
 ORDER BY Price ASC;
